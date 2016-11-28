@@ -1,0 +1,384 @@
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+ops-name-color: none
+nickname-prefix: ''
+max-nick-length: 1500
+change-displayname: true
+teleport-safety: true
+teleport-cooldown: 4
+teleport-delay: 4
+teleport-invulnerability: 4
+heal-cooldown: 60
+permission-based-item-spawn: false
+spawnmob-limit: 10
+warn-on-smite: true
+socialspy-commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+player-commands:
+- afk
+- afk.auto
+- back
+- back.ondeath
+- balance
+- balance.others
+- balancetop
+- build
+- chat.color
+- chat.format
+- chat.shout
+- chat.question
+- clearinventory
+- compass
+- depth
+- delhome
+- getpos
+- geoip.show
+- help
+- helpop
+- home
+- home.others
+- ignore
+- info
+- itemdb
+- kit
+- kits.tools
+- list
+- mail
+- mail.send
+- me
+- motd
+- msg
+- msg.color
+- nick
+- near
+- pay
+- ping
+- protect
+- r
+- rules
+- realname
+- seen
+- sell
+- sethome
+- setxmpp
+- signs.create.protection
+- signs.create.trade
+- signs.break.protection
+- signs.break.trade
+- signs.use.balance
+- signs.use.buy
+- signs.use.disposal
+- signs.use.enchant
+- signs.use.free
+- signs.use.gamemode
+- signs.use.heal
+- signs.use.info
+- signs.use.kit
+- signs.use.mail
+- signs.use.protection
+- signs.use.repair
+- signs.use.sell
+- signs.use.time
+- signs.use.trade
+- signs.use.warp
+- signs.use.weather
+- spawn
+- suicide
+- time
+- tpa
+- tpaccept
+- tpahere
+- tpdeny
+- warp
+- warp.list
+- world
+- worth
+- xmpp
+kits:
+  God:
+    delay: 84600
+    items:
+    - 276:0 1 damage_all:4 fire_aspect:1 durability:3
+    - 261:0 1 arrow_damage:4 durability:3 arrow_infinite:1
+    - 278:0 1 dig_speed:3 durability:3
+    - 279:0 1 dig_speed:3 durability:3
+    - 277:0 1 dig_speed:3 durability:3
+    - 322:1 2
+    - 322:0 64
+    - 364:0 64
+    - 46:0 64
+    - 310:0 1 protection_environmental:3 durability:3
+    - 311:0 1 protection_environmental:3 durability:3
+    - 312:0 1 protection_environmental:3 durability:3
+    - 313:0 1 protection_environmental:3 durability:3
+    - 383:50 6
+  Titan:
+    delay: 84600
+    items:
+    - 276:0 1 damage_all:1
+    - 261:0 1 arrow_damage:1 arrow_knockback:1
+    - 278:0 1 dig_speed:1
+    - 279:0 1 dig_speed:1
+    - 277:0 1 dig_speed:1
+    - 322:0 16
+    - 322:1 1
+    - 364:0 64
+    - 46:0 16
+    - 310:0 1 protection_environmental:1
+    - 311:0 1 protection_environmental:1
+    - 312:0 1 protection_environmental:1
+    - 313:0 1 protection_environmental:1
+    - 383:50 1
+  Knight:
+    delay: 84600
+    items:
+    - 267:0 1 damage_all:2
+    - 261:0 1 arrow_damage:1
+    - 257:0 1 dig_speed:1
+    - 258:0 1 dig_speed:1
+    - 256:0 1 dig_speed:1
+    - 17:0 16
+    - 322:0 8
+    - 364:0 64
+    - 46:0 8
+    - 306:0 1 protection_environmental:2
+    - 307:0 1 protection_environmental:2
+    - 308:0 1 protection_environmental:2
+    - 309:0 1 protection_environmental:2
+    - 49:0 64
+    - 49:0 64
+  Legend:
+    delay: 84600
+    items:
+    - 267:0 1 damage_all:4
+    - 261:0 1 arrow_damage:2
+    - 257:0 1 dig_speed:4
+    - 258:0 1 dig_speed:4
+    - 256:0 1 dig_speed:4
+    - 46:0 8
+    - 17:0 16
+    - 364:0 64
+    - 322:0 8
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 309:0 1 protection_environmental:4
+    - 308:0 1 protection_environmental:4
+    - 307:0 1 protection_environmental:4
+    - 306:0 1 protection_environmental:4
+  Starter:
+    delay: 6000
+    items:
+    - 306:0 1
+    - 307:0 1
+    - 308:0 1
+    - 309:0 1
+    - 267:0 1
+    - 258:0 1
+    - 257:0 1
+    - 256:0 1
+    - 364:0 16
+    - 17:0 32
+    - 1:0 32
+    - 12:0 32
+    - 49:0 8
+    - 322:0 4
+    - 368:0 1
+    - 50:0 64
+    - 261:0 1
+    - 262:0 64
+  Overlord:
+    delay: 84600
+    items:
+    - 276:0 1 damage_all:5 fire_aspect:1 durability:3
+    - 261:0 1 arrow_damage:5 durability:3 arrow_infinite:1
+    - 278:0 1 dig_speed:5 durability:3
+    - 279:0 1 dig_speed:5 durability:3
+    - 277:0 1 dig_speed:5 durability:3
+    - 322:1 16
+    - 322:0 64
+    - 383:50 16
+    - 46:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 46:0 64
+    - 310:0 1 protection_environmental:4 durability:3
+    - 311:0 1 protection_environmental:4 durability:3
+    - 312:0 1 protection_environmental:4 durability:3
+    - 313:0 1 protection_environmental:4 durability:3
+    - 49:0 64
+    - 49:0 64
+    - 49:0 64
+    - 364:0 64
+    - 46:0 64
+
+enabledSigns:
+- color
+- balance
+- buy
+- sell
+sign-use-per-second: 4
+backup:
+  interval: 30
+per-warp-permission: false
+list:
+  Staff: owner admin moderator builder developer helper manager CoOwner Founder Operator
+  Donators: Knight Titan Legend Overlord Prince
+debug: false
+remove-god-on-disconnect: false
+auto-afk: 300
+auto-afk-kick: -1
+freeze-afk-players: false
+disable-item-pickup-while-afk: false
+cancel-afk-on-interact: true
+cancel-afk-on-move: true
+death-messages: true
+allow-silent-join-quit: false
+custom-join-message: '&a&l+ &8&m>&r {PLAYER} '
+custom-quit-message: '&a&l- &8&m>&r {PLAYER}'
+world-teleport-permissions: false
+default-stack-size: -1
+oversized-stacksize: 64
+repair-enchanted: true
+unsafe-enchantments: true
+register-back-in-listener: false
+login-attack-delay: 5
+max-fly-speed: 0.8
+max-walk-speed: 0.8
+mails-per-minute: 1000
+max-tempban-time: -1
+update-bed-at-daytime: true
+world-home-permissions: false
+sethome-multiple:
+  Legend: 3
+  Titan: 5
+  God: 7
+  Overlord: 10
+tpa-accept-cancellation: 120
+starting-balance: 1500
+currency-symbol: $
+max-money: 10000000000000
+min-money: -10000
+economy-log-enabled: false
+non-ess-in-help: true
+hide-permissionless-help: true
+chat:
+  radius: 0
+  format: '&8[[FACTION]&8]&r {DISPLAYNAME} &8&l&m>&r {MESSAGE}'
+protect:
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: false
+    tnt-playerdamage: false
+    tnt-minecart-explosion: false
+    tnt-minecart-playerdamage: false
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-playerdamage: false
+    witherskull-explosion: false
+    witherskull-playerdamage: false
+    wither-spawnexplosion: false
+    wither-blockreplace: false
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    entitytarget: false
+    spawn:
+      creeper: false
+      skeleton: false
+      spider: false
+      giant: false
+      zombie: false
+      slime: false
+      ghast: false
+      pig_zombie: false
+      enderman: false
+      cave_spider: false
+      silverfish: false
+      blaze: false
+      magma_cube: false
+      ender_dragon: false
+      pig: false
+      sheep: false
+      cow: false
+      chicken: false
+      squid: false
+      wolf: false
+      mushroom_cow: false
+      snowman: false
+      ocelot: false
+      iron_golem: false
+      villager: false
+      wither: false
+      bat: false
+      witch: false
+      horse: false
+  creeper:
+    max-height: -1
+  disable:
+    fall: false
+    pvp: false
+    drown: false
+    suffocate: false
+    lavadmg: false
+    projectiles: false
+    contactdmg: false
+    firedmg: false
+    lightning: false
+    wither: false
+    weather:
+      storm: false
+      thunder: false
+      lightning: false
+    build: true
+    use: true
+    warn-on-build-disallow: true
+  alert:
+    on-placement: 10,11,46,327
+    on-use: 327
+  blacklist:
+    placement: 10,11,46,327
+    usage: 327
+newbies:
+  announce-format: '&dWelcome {DISPLAYNAME} #{UNIQUE} &d to &4Fuzed&fRaidz &c2.0!'
+  spawnpoint: newbies
+  kit: starter
+respawn-listener-priority: high
+respawn-at-home: false
