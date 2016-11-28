@@ -1,0 +1,577 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Operator:
+    default: false
+    permissions: []
+    inheritance:
+    - Admin
+    info:
+      build: false
+      prefix: '&8[&5&lOperator&8] &a'
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - -vanish.*
+    - '"*"'
+    - simpletabcolors.4
+    - staffchat.main
+    - tablist.staff
+    - tc.darkred
+    inheritance: []
+    info:
+      build: true
+      prefix: '&8[&4Owner&8] &f'
+      suffix: ''
+  Legend:
+    default: false
+    permissions:
+    - essentials.delhome
+    - essentials.hat
+    - essentials.home.multiple.Legend
+    - essentials.kits.legend
+    - playervaults.amount.3
+    - playervaults.workbench
+    inheritance:
+    - knight
+    info:
+      build: false
+      prefix: '&8[&6Legend&8] &6'
+      suffix: ''
+  Support:
+    default: false
+    permissions:
+    - essentials.sell
+    - tablist.staff
+    inheritance:
+    - overlord
+    info:
+      build: false
+      prefix: '&8[&9Support&8] &f'
+      suffix: ''
+  Retired:
+    default: false
+    permissions:
+    - essentials.jail
+    - essentials.kick
+    - essentials.mute
+    - essentials.nick
+    - essentials.tempban
+    - essentials.tempmute
+    - essentials.time.*
+    - essentials.toggle.jail
+    - essentials.togglejail
+    - minecraft.command.kick
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&aRetired&8-&dStaff&8] &c&l'
+      suffix: ''
+  Builder:
+    default: false
+    permissions:
+    - -essentials.socialspy
+    - chatcontrol.bypass.rules
+    - essentials.a
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.broadcast
+    - essentials.build
+    - essentials.build.*
+    - essentials.build.warzone
+    - essentials.chat.color
+    - essentials.chat.url
+    - essentials.delwarp
+    - essentials.eskull
+    - essentials.fly
+    - essentials.gamemode
+    - essentials.home.multiple.unlimited
+    - essentials.item
+    - essentials.itemdb
+    - essentials.kick
+    - essentials.mute
+    - essentials.ptime
+    - Essentials.sethome.multiple.unlimited
+    - essentials.sethome.unlimited
+    - essentials.setwarp
+    - essentials.setwarp.override
+    - essentials.sign.bold
+    - essentials.sign.color
+    - essentials.signs.*
+    - essentials.signs.color
+    - essentials.skull
+    - essentials.skull.*
+    - essentials.spawn
+    - essentials.speed
+    - essentials.teleport
+    - essentials.teleport.timer.bypass
+    - essentials.tempban
+    - essentials.time.*
+    - essentials.time.day
+    - essentials.time.set
+    - essentials.time.set.*
+    - essentials.time.set.day
+    - essentials.time.set.night
+    - essentials.tp
+    - essentials.vanish
+    - essentials.vanish.see
+    - essentials.warp.*
+    - essentials.warps.*
+    - essentials.warps.overwrite.*
+    - essentials.warzone
+    - essentials.warzone*
+    - essentials.warzone.*
+    - factions.bypass
+    - factions.bypass.*
+    - hd.*
+    - hologram.*
+    - holograms.*
+    - holographicdisplays.*
+    - mcmmo.chat.adminchat
+    - minecraft.command.setblock
+    - ModifyWorld
+    - multiverse.*
+    - multiverse.access.*
+    - nametags.format.bold
+    - noflypvp.exempt.blockbreak
+    - noflypvp.exempt.blockplace
+    - permissions.eskull
+    - permissions.skull
+    - permissions.skull.*
+    - playerheads.spawn
+    - playerheads.spawn.own
+    - worldedit.*
+    - worldguard.*
+    inheritance:
+    - mod
+    info:
+      build: false
+      prefix: '&8[&bBuilder&8&l]&a '
+      suffix: ''
+  Overlord:
+    default: false
+    permissions:
+    - essentials.fly
+    - essentials.home.multiple.Overlord
+    - esssentials.fix
+    - esssentials.fixall
+    - playervaults.amount.10
+    inheritance:
+    - god
+    info:
+      build: false
+      prefix: '&8[&cO&fv&ce&fr&cl&fo&cr&fd&8] &c'
+      suffix: ''
+  Developer:
+    default: false
+    permissions:
+    - staffchat.main
+    - tablist.staff
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&eDeveloper&8] &f'
+      suffix: ''
+  Manager:
+    default: false
+    permissions:
+    - simpletabcolors.6
+    - staffchat.main
+    - tablist.staff
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&6Manager&8] &f'
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - -essentials.backup
+    - -essentials.essentials
+    - -essentials.setspawn
+    - -essentials.reloadall
+    - -essentials.plugin
+    - -essentials.give
+    - essentials.pay
+    - staffchat.main
+    - tablist.staff
+    - -GroupManager.*
+    - -worldguard.*
+    - -worldedit.*
+    - chatcontrol.bypass.*
+    - chatcontrol.bypass.rules
+    - deathmessages.user
+    - essentials.ban.exempt
+    - essentials.ban.notify
+    - essentials.banip
+    - essentials.chat.color
+    - essentials.delhome
+    - essentials.delwarp
+    - essentials.feed
+    - essentials.fly
+    - essentials.gamemode
+    - essentials.gm
+    - essentials.hat
+    - essentials.heal
+    - essentials.home.*
+    - essentials.home.multiple
+    - essentials.home.other
+    - essentials.ignore
+    - essentials.ignore.exempt
+    - essentials.invsee
+    - essentials.item
+    - essentials.itemdb
+    - essentials.kick.exempt
+    - essentials.kit.*
+    - essentials.kits.legend
+    - essentials.lag
+    - essentials.me
+    - essentials.msg.color
+    - essentials.mute.exempt
+    - essentials.near
+    - essentials.nick.format
+    - essentials.setblock
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.*
+    - essentials.sethome.multiple.unlimited
+    - essentials.setwarp
+    - essentials.socialspy
+    - essentials.spawner.*
+    - essentials.speed
+    - essentials.speed.bypass
+    - essentials.tempban.notify
+    - essentials.tp
+    - essentials.tphere
+    - essentials.tpo
+    - essentials.vanish
+    - essentials.vanish.*
+    - factions.bypass
+    - FrameProtect.*
+    - lagg.killmobs
+    - mcmmo.chat.adminchat
+    - minecraft.command.setblock
+    - nametags.color.yellow
+    - nocheatplus.*
+    - nocheatplus.checks.*
+    - noflypvp.exempt.*
+    - noflypvp.exempt.blockbreak
+    - noflypvp.exempt.blockplace
+    - noflypvp.exempt.break
+    - noflypvp.exempt.place
+    - severelist.staff
+    - spawner.*
+    inheritance:
+    - moderator
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      build: true
+      prefix: '&8[&dAdmin&8] &f'
+      suffix: ''
+  Founder:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&5Server&8-&dFounder&8] &8'
+      suffix: ''
+  Helper:
+    default: false
+    permissions:
+    - clear.chat
+    - essentials.feed
+    - essentials.pay
+    - litebans.kick
+    - litebans.mute
+    - litebans.unmute
+    - litebans.warn
+    - staffchat.main
+    - tablist.staff
+    - essentials.jail
+    - essentials.kick
+    - essentials.mute
+    - essentials.nick
+    - essentials.tempban
+    - essentials.tempmute
+    - essentials.time.*
+    - essentials.toggle.jail
+    - essentials.togglejail
+    - minecraft.command.kick
+    inheritance:
+    - member
+    - knight
+    info:
+      build: false
+      prefix: '&8[&2Helper&8] &f'
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - bouncysponge.jump
+    - chatcontrol.commands.clear
+    - deathmessages.user
+    - essenitals.invsee.see
+    - essentials
+    - essentials.afk
+    - essentials.ban
+    - essentials.ban.notify
+    - essentials.ban.offline
+    - essentials.clearinventory
+    - essentials.fly
+    - essentials.gc
+    - essentials.god
+    - essentials.ignore.exempt
+    - essentials.invsee
+    - essentials.invsee.see
+    - essentials.jail
+    - essentials.jail.exempt
+    - essentials.kick
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mute
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.others
+    - essentials.seen
+    - essentials.socialspy
+    - essentials.teleport
+    - essentials.teleport.timer.bypass
+    - essentials.tempban
+    - essentials.tempban.notify
+    - essentials.tempban.offline
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    - essentials.tp
+    - essentials.tphere
+    - essentials.unban
+    - essentials.vanish
+    - essentials.vanish.see
+    - nametags.color.aqua
+    - nametags.format.bold
+    - nicktokens.admin
+    - nicktokens.tokens.add
+    - nocheatplus.notify
+    - litebans.*
+    - staffchat.main
+    - tablist.staff
+    inheritance:
+    - helper
+    info:
+      build: true
+      prefix: '&8[&aModerator&8] &f'
+      suffix: ''
+  YouTuber:
+    default: false
+    permissions:
+    - essentials.pay
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&f&lYou&4&lTube&8] &f'
+      suffix: ''
+  Knight:
+    default: false
+    permissions:
+    - essentials.home.multiple
+    - essentials.kits.Knight
+    - essentials.ptime
+    - essentials.recipe
+    - playervaults.amount.2
+    inheritance:
+    - member
+    info:
+      build: false
+      prefix: '&8[&eKnight&8] &e'
+      suffix: ''
+  CoOwner:
+    default: false
+    permissions:
+    - essentials.clearinventory
+    - simpletabcolors.c
+    - staffchat.main
+    - tablist.staff
+    inheritance: []
+    info:
+      build: false
+      prefix: '&8[&cCo-Owner&8] &f'
+      suffix: ''
+  Member:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    - -essentials.sell
+    - -essentials.warp.staff
+    - -rateofxray.selfnotifications
+    - -essentials.helpop
+    - -silkspawners.craft.*
+    - -groupmanager.*
+    - -essentials.afk
+    - -essentials.me
+    - -bukkit.command.me
+    - -bukkit.command.tell
+    - -bukkit.command.help
+    - -minecraft.command.help
+    - -essentials.build.craft.158
+    - -essentials.build.craft.27
+    - -essentials.build.craft.154
+    - -essentials.build.place.416
+    - alertapi.receive
+    - alertapi.send
+    - auction.bid
+    - auction.start
+    - deathmessages.user
+    - essential.me
+    - essentials.bal
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build.*
+    - essentials.buy
+    - essentials.delhome
+    - essentials.home
+    - essentials.ignore
+    - essentials.kit
+    - essentials.mail
+    - essentials.mail.read
+    - essentials.mail.send
+    - essentials.money
+    - essentials.motd
+    - essentials.msg
+    - essentials.pay
+    - essentials.realname
+    - essentials.sethome
+    - essentials.sign.use.warp
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.heal
+    - essentials.signs.use.kit
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.time
+    - essentials.signs.use.weather
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tell
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpadeny
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.*
+    - essentials.warp.info
+    - essentials.warp.list
+    - essentials.whisper
+    - factions.join
+    - factions.list
+    - factions.power
+    - factions.scoreboard
+    - factions.setwarp
+    - factions.show
+    - factions.warp
+    - factions.warp.*
+    - fbasics.bypass.commands.back
+    - fbasics.commands.wilderness
+    - lottery.buy
+    - modifyworld.*
+    - modifyworld.chat
+    - ping.others
+    - ping.self
+    - PingPlayer.use
+    - silkspawners.place.*
+    - silkspawners.silkdrop
+    - silkspawners.silkdrop.*
+    - essentials.kits.member
+    - -bukkit.command.kill
+    - -essentials.nick.format
+    - -essentials.nick.color
+    - ac.crate.open
+    - archoncrates.crate.open
+    - archoncrates.crate.open.any
+    - auctionhouse.user
+    - auctionhouse.user.command
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build
+    - essentials.build.collect
+    - essentials.delhome
+    - essentials.hat
+    - essentials.home
+    - essentials.kit
+    - essentials.kit.Once
+    - essentials.kit.Starter
+    - essentials.kits.Base
+    - essentials.kits.reset
+    - essentials.kits.starter
+    - essentials.list
+    - essentials.msg
+    - essentials.once
+    - essentials.pay
+    - essentials.sethome
+    - essentials.sethond
+    - essentials.sign.use.*
+    - essentials.sign.use.buy
+    - essentials.sign.use.sell
+    - essentials.signs.use.*
+    - essentials.Spawn
+    - essentials.tpa
+    - essentials.tpaccept
+    - Essentials.tpahere
+    - essentials.warp
+    - Essentials.warp.*
+    - Essentials.warp.list
+    - playervaults.amount.1
+    - randompackage.enchanter
+    - randompackage.tinkerer
+    - randomtp.tp
+    - spawnershop.use
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      build: false
+      prefix: '&8[&fMember&8] &f'
+      suffix: ''
+  Titan:
+    default: false
+    permissions:
+    - essentials.back
+    - essentials.home.multiple.Overlord
+    - essentials.home.multiple.Titan
+    - playervaults.amount.5
+    - silkspawner.silkdrop.*
+    inheritance:
+    - legend
+    info:
+      build: false
+      prefix: '&8[&5Titan&8] &5'
+      suffix: ''
+  God:
+    default: false
+    permissions:
+    - essentials.home.multiple.God
+    - playervaults.amount.7
+    - playervaults.workbench
+    inheritance:
+    - titan
+    info:
+      build: false
+      prefix: '&8[&dGod&8] &d'
+      suffix: ''
